@@ -1,0 +1,27 @@
+Prueba de escritorio //
+
+Pantalla
+Ingrese un numero positivo
+7 (7 unidades)
+70 (7 decenas)
+700 (7 centenas)
+--------------------------------------------------------------
+
+Valores
+k1 = 777
+residuo =     777 % 10  //     77 % 10  //      7 % 10  // 
+potencia =  10 ^ 0 = 1 // 10 ^ 1 = 10   // 10 ^ 2 = 100 //
+numero =         7 * 1 //        7 * 10 //     7 * 100 //
+j = 		     0 // 	      1 //           2 //
+k1 = 	   777/10 = 77 //   77 / 10 = 7 //         7/10//
+
+
+7 * 10 elevado a la potencia 0 = 7 * 1 = 7
+7 * 10 elevado a la potencia 1 = 7 * 10 = 70
+7 * 10 elevado a la potencia 2 = 7 * 100 = 700
+
+
+
+
+
+

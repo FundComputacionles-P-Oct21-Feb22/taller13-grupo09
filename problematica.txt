@@ -1,0 +1,66 @@
+Taller 13 //
+Dado un número positivo, genere una miniespecificación que permita descomponer el número dado en unidades, decenas, centenas, etc.
+
+1. Inicio
+2. Funcion principal()
+3. k, i[0,n] 
+4. Escribir "Ingrese un numero positivo"
+5. Leer k
+6. k1, i[0,n] <-- k
+7. mensaje, x(1000){[a-z][A-Z][BS][0,n]}
+8. mensaje <-- obtenerOperacion(k1)
+9. Escribir mensaje
+10. fin funcion principal()
+
+11. funcion obtenerOperacion(k1, i) : i
+12. j, i[0,n] <-- 0
+13. numero, i[0,n] <-- 0
+14. potencia, i[0,n] 
+15. residuo, i[0,n] <-- 0
+16. mensaje, x(1000){[a-z][A-Z][BS][0,n]}
+
+17. Mientras (numero > 0) entonces
+18. residuo <-- k1 % 10
+19. potencia <-- 10 ** j
+20. numero <-- residuo * potencia
+21. mensaje <-- obtenerMensaje(numero)
+22. k1 <-- k1/10
+23. j <-- j + 1
+24. fin Mientras
+25. retorna mensaje
+26. fin funcion obtenerOperacion
+
+27. funcion obtenerMensaje(numero, i) : x(1000){[a-z][A-Z][BS][0,n]}
+28. cadena_final, x(1000){[a-z][A-Z][BS][0,n]}
+29. cadena_final <-- ""
+30. Si (numero >= 0 and numero < 10) entonces
+31. 	cadena_final <-- cadena final + " " + numero + "(" + numero + " unidades)" \n
+32. Fin si
+33. Si (numero >= 10 and numero < 100) entonces
+34. 	cadena_final <-- cadena final + " " + numero + "(" + numero/10 + " decenas)" \n
+35. Fin si
+36. Si (numero >= 100 and numero < 1000) entonces
+37. 	cadena_final <-- cadena final + " " + numero + "(" + numero/100 + " centenas)" \n
+38. Fin si
+39. Si (numero >= 1000 and numero < 10000) entonces
+40. 	cadena_final <-- cadena final + " " + numero + "(" + numero/1000 + " unidades de mil)" \n
+41. Fin si
+42. retorna cadena_final
+43. fin funcion obtenerMensaje
+44. Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
